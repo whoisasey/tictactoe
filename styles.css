@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+	--main: #545454;
+	--container: whitesmoke;
+	--title: #c93e13;
+	--won: #bd022f;
+	--x: #0d0d96;
+	--o: #ffff00;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	color: var(--main);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	border: 1px solid var(--main);
+	background: var(--container);
+	margin: 50px;
+	padding: 50px;
+	border-radius: 25px;
+}
+.game-grid {
+	background: var(--main);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 5px;
+	margin-top: 50px;
+}
+
+.game-cell {
+	background: var(--container);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	height: 200px;
+	width: 200px;
+}
+
+.title {
+	text-align: center;
+}
+
+.title span {
+	color: var(--title);
+}
+
+.status-action,
+button {
+	font-size: 25px;
+}
+
+.status-action {
+	display: flex;
+	margin-top: 25px;
+	justify-content: space-around;
+	height: 30px;
+}
+
+.status span {
+	color: var(--title);
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
