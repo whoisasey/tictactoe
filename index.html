@@ -4,12 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./styles.css">
-	<meta property="og:title" content="I Won TIC TAC TOE!" />
+	<meta property="og:url"
+		content="https://whoisasey.github.io/tictactoe/" />
+<meta property="og:type" content="website" />
+	<meta property="og:title" content="TIC TAC TOE!" />
 	<meta property="og:description" content="I Won TIC TAC TOE!" />
 	<title>TIC TAC TOE</title>
 	</head>
 	
 	<body>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0"
+			nonce="FioOolGY">
+	FB.ui({
+		method: 'share',
+		href: 'https://whoisasey.github.io/tictactoe/',
+	}, function (response) { });					
+			</script>
 		<div class="container">
 			<h1 class="title">TIC <span>TAC</span> TOE</h1>
 			<div class="status-action">
