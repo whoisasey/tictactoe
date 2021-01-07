@@ -3,6 +3,8 @@ const statusDiv = document.querySelector('.status')
 const resetBtn = document.querySelector('button')
 const cells = document.querySelectorAll('.game-cell')
 const error = document.querySelector('.message')
+const span = document.querySelector('.error')
+
 
 // game constants
 const xSymbol = '×'
@@ -14,7 +16,6 @@ let gameIsLive = true;
 let xIsNext = true;
 
 // Helper Functions
-// const letterToSymbol = (letter) => 	letter === 'x' ? xSymbol : oSymbol
 
 const handleWin = (letter) => {
 	gameIsLive = false;
@@ -85,9 +86,9 @@ const checkGameStatus = ()=> {
 		} else {
 			xIsNext = !xIsNext;
 			if (xIsNext) {
-				statusDiv.innerHTML = `<span>${xSymbol} is next</span>`
+				statusDiv.innerHTML = `<span class="blue">${xSymbol} is next<span>`
 			} else {
-				statusDiv.innerHTML = `<span>${oSymbol} is next</span>`
+				statusDiv.innerHTML = `<span class="yellow">${oSymbol} is next</span>`
 			}
 		}
   }
@@ -113,14 +114,13 @@ const handleCellClick = e => {
 
 const handleReset = () => {
 	xIsNext = true;
-	statusDiv.innerHTML = `${xSymbol} is next`
+	statusDiv.innerHTML = `<span class="blue">${xSymbol} is next</span>`
 	for (const cell of cells) {
 		cell.classList.remove('x')
 		cell.classList.remove('o')
 		cell.classList.remove('won')
 	}
 	gameIsLive = true;
-	const span = document.querySelector('.error')
 	error.removeChild(span)
 }
 

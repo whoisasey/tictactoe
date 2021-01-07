@@ -68,10 +68,22 @@ button {
 	justify-content: space-around;
 	height: 30px;
 }
-
-.status,
 .status span {
-	color: var(--title);
+	color: var(--won);
+}
+
+span.blue {
+	color: var(--o);
+	background-color: var(--x);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+span.yellow {
+	color: var(--x);
+	background-color: var(--o);
+	padding: 5px;
+	border-radius: 5px;
 }
 
 button {
