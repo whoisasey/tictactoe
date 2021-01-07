@@ -7,6 +7,7 @@
 	--won: #bd022f;
 	--x: #0d0d96;
 	--o: #ffff00;
+	--content: #000;
 }
 
 * {
@@ -68,6 +69,12 @@ button {
 	height: 30px;
 }
 
+/* .status {
+	background-color: var(--main);
+	color: var(--container);
+	padding: 10px;
+	border-radius: 5px;
+} */
 .status span {
 	color: var(--title);
 }
@@ -76,4 +83,45 @@ button {
 	cursor: pointer;
 	border: none;
 	background-color: transparent;
+}
+
+.x,
+.o {
+	cursor: default;
+}
+
+.x::after {
+	content: "×";
+	color: var(--content);
+	font-size: 200px;
+}
+
+.x {
+	background-color: var(--x);
+}
+.o::after {
+	content: "○";
+	color: var(--content);
+	font-size: 225px;
+}
+
+.o {
+	background-color: var(--o);
+}
+.won {
+	background-color: var(--won);
+}
+
+.message {
+	display: flex;
+	justify-content: center;
+}
+
+.error {
+	text-align: center;
+	color: var(--title);
+	margin: 10px auto;
+	padding: 10px;
+	border: 1px solid var(--main);
+	border-radius: 10px;
 }
