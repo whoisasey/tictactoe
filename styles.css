@@ -92,7 +92,7 @@ button {
 
 .x::after {
 	content: "×";
-	color: var(--content);
+	color: var(--container);
 	font-size: 200px;
 }
 
