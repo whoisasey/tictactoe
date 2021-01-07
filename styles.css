@@ -3,8 +3,8 @@
 :root {
 	--main: #545454;
 	--container: whitesmoke;
-	--title: #c93e13;
-	--won: #bd022f;
+	--title: #ff9e07;
+	--won: #ff0000;
 	--x: #0d0d96;
 	--o: #ffff00;
 	--content: #000;
@@ -69,12 +69,7 @@ button {
 	height: 30px;
 }
 
-/* .status {
-	background-color: var(--main);
-	color: var(--container);
-	padding: 10px;
-	border-radius: 5px;
-} */
+.status,
 .status span {
 	color: var(--title);
 }
@@ -108,6 +103,7 @@ button {
 .o {
 	background-color: var(--o);
 }
+
 .won {
 	background-color: var(--won);
 }
@@ -119,7 +115,7 @@ button {
 
 .error {
 	text-align: center;
-	color: var(--title);
+	color: var(--won);
 	margin: 10px auto;
 	padding: 10px;
 	border: 1px solid var(--main);
