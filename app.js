@@ -16,7 +16,7 @@ let xIsNext = true; //x is always the first player
 
 // Helper Functions
 
-// if cell position passed is x or o, show winner
+// if cell position passed is x, x is the winner, if not show o has won
 const handleWin = (letter) => {
 	gameIsLive = false;
 	if (letter === 'x') {
@@ -98,7 +98,7 @@ const checkGameStatus = ()=> {
 		  cells[6].classList.add('won');
 		} else if (topLeft && topMiddle && topRight && middleMiddle && middleLeft && middleRight && bottomLeft && bottomMiddle && bottomRight) {
 
-			// if no winner
+			// if no winner, all cells clicked but no winning combination
 			gameIsLive = false;
 			statusDiv.innerHTML = 'No Winner! Game is Tied'
 		} else {
@@ -137,7 +137,7 @@ const handleCellClick = e => {
 
 const handleReset = () => {
 	xIsNext = true;
-	//when game is reset, set x to the first player (blue)
+	//when game is reset, set to first player x (blue)
 	statusDiv.innerHTML = `<span class="blue">${xSymbol} is next</span>`
 	for (const cell of cells) {
 		// remove all players from the board, clear additional classes and clear winner
@@ -147,9 +147,8 @@ const handleReset = () => {
 	}
 	gameIsLive = true;
 
-	//remove error message
 	const span = document.querySelector('.error')
-
+	//remove error message
 	error.removeChild(span)
 }
 

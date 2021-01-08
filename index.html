@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,75 +12,79 @@
 	<meta property="og:title" content="Play Tic Tac Toe with me!" />
 	<meta property="og:image" content="https://github.com/whoisasey/tictactoe/blob/master/assets/tictac.png">
 	<meta name="twitter:card" content="https://github.com/whoisasey/tictactoe/blob/master/assets/tictac.png">
-		<meta name="twitter:image" content="https://github.com/whoisasey/tictactoe/blob/master/assets/tictac.png">
+	<meta name="twitter:image" content="https://github.com/whoisasey/tictactoe/blob/master/assets/tictac.png">
 
 	<title>TIC TAC TOE</title>
-	</head>
-	
-	<body>
-		<!-- facebook and twitter scripts -->
-		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0"
-			nonce="FioOolGY">
-		FB.ui({
-			method: 'share',
-			link: 'https://whoisasey.github.io/tictactoe/',
-		}, function (response) { });					
+</head>
+
+<body>
+	<!-- facebook and twitter SDK scripts -->
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0"
+		nonce="FioOolGY">
+			FB.ui({
+				method: 'share',
+				link: 'https://whoisasey.github.io/tictactoe/',
+			}, function (response) { });					
 		</script>
 
-		<script>
+	<script>
 		window.twttr = (function (d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0],
-					t = window.twttr || {};
-				if (d.getElementById(id)) return t;
-				js = d.createElement(s);
-				js.id = id;
-				js.src = "https://platform.twitter.com/widgets.js";
-				fjs.parentNode.insertBefore(js, fjs);
+			var js, fjs = d.getElementsByTagName(s)[0],
+				t = window.twttr || {};
+			if (d.getElementById(id)) return t;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
 
-				t._e = [];
-				t.ready = function (f) {
-					t._e.push(f);
-				};
+			t._e = [];
+			t.ready = function (f) {
+				t._e.push(f);
+			};
 
-				return t;
-			}(document, "script", "twitter-wjs"));
-		</script>
+			return t;
+		}(document, "script", "twitter-wjs"));
+	</script>
 
 
-		<div class="container">
-			<h1 class="title">TIC <span>TAC</span> TOE</h1>
-			<div class="status-action">
-				<div class="status"><span class="blue">× is next</span></div>
-				<button>Reset</button>
+	<div class="container">
+		<h1 class="title">TIC <span>TAC</span> TOE</h1>
+		<div class="status-action">
+			<div class="status">
+				<span class="blue">× is next</span>
 			</div>
+			<button>Reset</button>
+		</div>
 
-			<div class="message"></div>
+		<div class="message"></div>
 
-			<div class="game-grid">
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-				<div class="game-cell"></div>
-			</div>
+		<div class="game-grid">
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+			<div class="game-cell"></div>
+		</div>
 
-			<!-- facebook and twitter share buttons -->
-			<iframe
+		<!-- facebook and twitter share buttons -->
+		<iframe
 			src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwhoisasey.github.io%2Ftictactoe%2F&layout=button_count&size=large&width=88&height=28&appId"
 			width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
 			allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
 		</iframe>
-			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Play%20Tic%20Tac%20Toe%20with%20me!%20#demo%20via%20@whoisasey" data-size="large">
-				Tweet</a>
-		</div>
-		
-		<!-- local script -->
-		<script src='./app.js'></script>
+		<a class="twitter-share-button"
+			href="https://twitter.com/intent/tweet?text=Play%20Tic%20Tac%20Toe%20with%20me!%20#demo%20via%20@whoisasey"
+			data-size="large">
+			Tweet</a>
+	</div>
 
-	
+	<!-- local script -->
+	<script src='./app.js'></script>
+
 </body>
+
 </html>
