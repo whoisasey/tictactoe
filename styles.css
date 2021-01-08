@@ -1,3 +1,4 @@
+/* global styles */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 :root {
@@ -23,6 +24,13 @@ body {
 	justify-content: center;
 }
 
+button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+/* container styles */
 .container {
 	border: 1px solid var(--main);
 	background: var(--container);
@@ -30,6 +38,8 @@ body {
 	padding: 50px;
 	border-radius: 25px;
 }
+
+/* game grid and cells */
 .game-grid {
 	background: var(--main);
 	display: grid;
@@ -49,6 +59,7 @@ body {
 	width: 200px;
 }
 
+/* conditional titles and status */
 .title {
 	text-align: center;
 }
@@ -86,12 +97,7 @@ span.yellow {
 	border-radius: 5px;
 }
 
-button {
-	cursor: pointer;
-	border: none;
-	background-color: transparent;
-}
-
+/* x and o pieces */
 .x,
 .o {
 	cursor: default;
@@ -119,6 +125,8 @@ button {
 .won {
 	background-color: var(--won);
 }
+
+/* error message */
 
 .message {
 	display: flex;

@@ -20,6 +20,22 @@
 		href: 'https://whoisasey.github.io/tictactoe/',
 	}, function (response) { });					
 			</script>
+			<script>window.twttr = (function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0],
+						t = window.twttr || {};
+					if (d.getElementById(id)) return t;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "https://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js, fjs);
+
+					t._e = [];
+					t.ready = function (f) {
+						t._e.push(f);
+					};
+
+					return t;
+				}(document, "script", "twitter-wjs"));</script>
 		<div class="container">
 			<h1 class="title">TIC <span>TAC</span> TOE</h1>
 			<div class="status-action">
@@ -43,6 +59,8 @@
 	src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwhoisasey.github.io%2Ftictactoe%2F&layout=button_count&size=large&width=88&height=28&appId"
 	width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
 	allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Play%20Tic%20Tac%20Toe%20with%20me!%20#demo%20via%20@whoisasey" data-size="large">
+		Tweet</a>
 		</div>
 		
 		<script src='./app.js'></script>
