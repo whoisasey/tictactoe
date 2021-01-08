@@ -20,9 +20,9 @@ let xIsNext = true; //x is always the first player
 const handleWin = (letter) => {
 	gameIsLive = false;
 	if (letter === 'x') {
-		statusDiv.innerHTML = `<span>blue has won!</span>`;
+		statusDiv.innerHTML = `<span>${xSymbol} has won!</span>`;
 		} else {
-		statusDiv.innerHTML = `<span>yellow has won!</span>`
+		statusDiv.innerHTML = `<span>${oSymbol} has won!</span>`
 	}
 }
 
