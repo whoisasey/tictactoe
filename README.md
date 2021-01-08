@@ -8,4 +8,4 @@ The first person to reach a 3-in-a-row combination wins.
 
 Click "reset" to restart the game at any time.
 
-Share this game to Facebook!
+Share this game to Facebook and Twitter!

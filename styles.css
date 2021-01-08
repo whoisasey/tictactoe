@@ -79,6 +79,7 @@ button {
 	justify-content: space-around;
 	height: 30px;
 }
+
 .status span {
 	color: var(--won);
 }
