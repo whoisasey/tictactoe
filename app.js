@@ -3,7 +3,6 @@ const statusDiv = document.querySelector('.status')
 const resetBtn = document.querySelector('button')
 const cells = document.querySelectorAll('.game-cell')
 const error = document.querySelector('.message')
-const span = document.querySelector('.error')
 
 
 // Game Constants
@@ -147,7 +146,10 @@ const handleReset = () => {
 		cell.classList.remove('won')
 	}
 	gameIsLive = true;
+
 	//remove error message
+	const span = document.querySelector('.error')
+
 	error.removeChild(span)
 }
 
